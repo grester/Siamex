@@ -1,0 +1,11 @@
+thailand_blue = {
+	color = "thaiblue"
+
+	possible = {
+		exists = c:SIA
+		THIS = c:SIA
+		c:SIA{
+			has_variable = siamex_rename_decision_taken
+		}		
+	}
+}

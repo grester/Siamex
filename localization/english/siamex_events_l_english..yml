@@ -1,0 +1,14 @@
+﻿l_english:
+ #TUTORIAL: t means the title of the decision
+ siamex_events.1.t:0 "Unite the Thai people"
+ #TUTORIAL: d means the description of the decision
+ siamex_events.1.d:0 "Borneo's riches will be very important to fund our great empire. We should exploit this opportunity."
+ #TUTORIAL: a,b,c,d,e refer to the options available to the decision, maximum 5 (a,b,c,d,e)
+ siamex_events.1.a:0 "Empire!"
+ #TUTORIAL: f means the flavor of the decision, which is the text that is below the description, mostly used for quotes
+ siamex_events.1.f:0 "“Learning is not attained by chance, it must be sought for with ardor and attended to with diligence.”"
+ 
+ siamex_events.2.t:0 "Unite people under a new name"
+ siamex_events.2.d:0 "Now that our people are united, we must let the world know who inhabits this land!"
+ siamex_events.2.a:0 "Thailand for the Thai!"
+ siamex_events.2.f:0 "“Sooner or later our flag will fly over the lands of other peoples besides the Thai.”"

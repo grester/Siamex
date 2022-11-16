@@ -1,0 +1,95 @@
+﻿namespace = siamex_events
+
+#Form empire
+
+siamex_events.1 = {
+
+	#TUTORIAL: Do not change
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	#TUTORIAL: Do not change
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	on_opened_soundeffect = "file:/music/siamex_nat.ogg"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	#TUTORIAL: Make sure to change tutorial_events to the namespace you chose, the number is the event ID of your choosing as well
+	title = siamex_events.1.t
+	desc = siamex_events.1.d
+	flavor = siamex_events.1.f
+
+	#TUTORIAL: Do not change
+	duration = 3
+
+	trigger = {
+		has_global_variable = siamex_rename_decision_taken
+	}
+
+	option = {
+	
+		name = siamex_events.1.a
+				
+		#default_option = yes
+		
+		add_modifier = {
+            name = siamex_cultural_modifier
+			
+			#TUTORIAL: -1 means permanent
+            months = -1
+        }
+		
+		
+		
+	}
+}
+
+#Rename thailand
+
+siamex_events.2 = {
+
+	#TUTORIAL: Do not change
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+
+	#TUTORIAL: Do not change
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	on_opened_soundeffect = "file:/music/siamex_nat.ogg"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	#TUTORIAL: Make sure to change tutorial_events to the namespace you chose, the number is the event ID of your choosing as well
+	title = siamex_events.2.t
+	desc = siamex_events.2.d
+	flavor = siamex_events.2.f
+
+	#TUTORIAL: Do not change
+	duration = 3
+
+	trigger = {
+		has_variable = siamex_rename_decision_taken
+	}
+
+	option = {	
+		name = siamex_events.2.a
+		
+		#TUTORIAL: If you're making multiple options, then you must enable this code and choose which option do you want the AI to pick
+		#default_option = yes
+		
+		#add_modifier = {
+        #    name = siamex_annex_modifier
+		#	
+		#	#TUTORIAL: -1 means permanent, otherwise would be the amount of months the modifier will last
+        #    months = 6
+        #}			
+		
+	}
+}

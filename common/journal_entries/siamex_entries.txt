@@ -1,0 +1,86 @@
+﻿siamex_empire_entry = {
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	immediate = {
+		random_scope_state = {
+			limit = { state_region = s:STATE_NORTH_BORNEO }
+			save_scope_as = north_borneo_state
+		}
+	}
+	
+	complete = {		
+		c:SIA={	
+			AND {
+				has_state_in_state_region = STATE_NORTH_BORNEO
+				custom_tooltip = {
+					text = siamex_borneo_mines_t
+					any_scope_state = {
+						state_region = s:STATE_NORTH_BORNEO
+						any_scope_building = {
+							is_building_type = building_sulfur_mine
+							level >= 2					
+						}
+					}
+				}
+				
+			}
+									
+		}
+	}
+	
+
+	on_complete = {
+
+		trigger_event = { 
+			id = siamex_events.1 
+			days = 0
+			popup = no
+		}
+		
+	}
+	
+
+	#TUTORIAL: The weight of this entry in the journal entries list, the higher the value, the higher will the journal entry be in the list
+	weight = 100
+	
+	#TUTORIAL: We should keep this as yes if we want the journal entry to complete due a timer
+	progressbar = no
+
+	#TUTORIAL: You can choose (yes\no), this pins the journal entry to the top-right hand side of the screen
+	should_be_pinned_by_default = yes
+	
+}
+
+siamex_chiang_entry = {
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	complete = {		
+		c:SIA={	
+			owns_entire_state_region = STATE_CHIANG_MAI								
+		}
+	}
+	
+
+	on_complete = {
+		
+	}
+	
+	invalid = {
+		c:SIA={	
+			owns_entire_state_region = STATE_CHIANG_MAI								
+		}
+	}
+	
+
+	#TUTORIAL: The weight of this entry in the journal entries list, the higher the value, the higher will the journal entry be in the list
+	weight = 100
+	
+	#TUTORIAL: We should keep this as yes if we want the journal entry to complete due a timer
+	progressbar = yes
+
+	#TUTORIAL: You can choose (yes\no), this pins the journal entry to the top-right hand side of the screen
+	should_be_pinned_by_default = no
+	
+}

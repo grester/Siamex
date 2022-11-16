@@ -1,0 +1,10 @@
+﻿COUNTRIES = {
+	c:SIA = {		
+		add_journal_entry = { type = siamex_chiang_entry }
+		save_scope_as = siam_country
+		random_scope_state = {
+			limit = { state_region = s:STATE_NORTH_BORNEO }
+			save_scope_as = north_borneo_state
+		}
+	}
+}

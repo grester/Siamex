@@ -1,0 +1,81 @@
+﻿siamex_rename_decision = {
+	
+	is_shown = {
+		this = c:SIA		
+		#TUTORIAL: Here we need to check whether this decision has been taken or not yet
+		NOT = { has_variable = siamex_rename_decision_taken }
+	}
+
+	possible = {		
+		c:SIA = {
+			AND = {		
+				owns_entire_state_region = STATE_CHIANG_MAI
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic				
+				}				
+			}			
+		}
+	}
+	
+	when_taken = {
+		c:SIA{
+			set_variable = {
+				name = siamex_rename_decision_taken
+				value = yes
+			}
+		}		
+		
+		trigger_event = {
+			id = siamex_events.2
+			days = 5
+			popup = yes
+		}					
+		
+	}
+	
+	ai_chance = {
+		base = 5
+	}
+}
+
+siamex_annex_decision = {
+	
+	is_shown = {
+		this = c:SIA		
+		#TUTORIAL: Here we need to check whether this decision has been taken or not yet
+		NOT = { has_variable = siamex_annex_decision_taken }
+	}
+
+	possible = {		
+		c:SIA = {
+			AND = {		
+				owns_entire_state_region = STATE_CHIANG_MAI
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic				
+				}				
+			}			
+		}
+	}
+	
+	when_taken = {
+		c:SIA{
+			set_variable = {
+				name = siamex_annex_decision_taken
+				value = yes
+			}
+		}
+		
+		c:CIM{
+			every_state = { 
+				set_state_owner = c:SIA
+			}			
+		}
+		
+	}
+	
+	ai_chance = {
+		base = 5
+	}
+}

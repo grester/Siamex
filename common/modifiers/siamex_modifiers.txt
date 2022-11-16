@@ -1,0 +1,16 @@
+﻿#TUTORIAL: You need to add this modifier to localization
+siamex_cultural_modifier = {
+
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	
+	#TUTORIAL: See this file to get the effects that can be added to modifiers game\common\modifier_types\00_modifier_types.txt
+	state_assimilation_mult = 0.2
+}
+
+siamex_annex_modifier = {
+
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	
+	#TUTORIAL: See this file to get the effects that can be added to modifiers game\common\modifier_types\00_modifier_types.txt
+	country_radicals_from_conquest_mult = -0.5
+}

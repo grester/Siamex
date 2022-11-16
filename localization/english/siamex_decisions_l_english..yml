@@ -1,0 +1,7 @@
+﻿l_english:
+ #TUTORIAL: Replace tutorial_decision with your decision's name
+ #TUTORIAL: Replace the text between the strings (" ") with the decision's name, then the decision's description
+ siamex_rename_decision:0 "Rename Siam to Thailand"
+ siamex_rename_decision_desc:0 "$SIA$, $STATE_NORTH_BORNEO$"
+ siamex_annex_chiang:0 "Amicable annexation of $CMI$"
+ siamex_annex_chiang_desc:0 "$CMI$ has $CULTURE_TAI$ culture. They are our brothers. And our brothers are under threat from european invaders. We if unite ourselves we will be stronger."

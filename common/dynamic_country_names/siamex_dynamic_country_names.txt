@@ -1,0 +1,15 @@
+SIA = { 
+	dynamic_country_name = {
+		name = dyn_c_thailand
+		adjective = dyn_c_thailand_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			c:SIA{
+				has_variable = siamex_rename_decision_taken
+			}			
+		}
+	}
+}

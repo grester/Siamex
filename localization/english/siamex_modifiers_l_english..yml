@@ -1,0 +1,7 @@
+﻿l_english:
+ #TUTORIAL: Replace tutorial_education with your modifier's name
+ #TUTORIAL: Replace the text between the strings (" ") with the modifier's name, then the modifier's description
+ siamex_cultural_modifier:0 "Empire modifier"
+ siamex_cultural_modifier_desc:0 "Empire modifier description"
+ siamex_annex_modifier:0 "Desired annexation."
+ siamex_annex_modifier_desc:0 "Thai heritage is everywhere!"

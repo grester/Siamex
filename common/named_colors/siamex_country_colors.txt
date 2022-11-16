@@ -1,0 +1,3 @@
+﻿colors = {	
+	thaiblue = hsv360 { 233 53 50 }
+}

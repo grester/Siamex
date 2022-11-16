@@ -1,0 +1,10 @@
+﻿##### MOOD
+##### Contextual music ("is_valid") not yet implemented
+
+siamex_nat = {
+    music = "file:/music/siamex_nat.ogg"
+    pause_factor = 25
+    mood = yes
+    can_be_interrupted = yes
+    is_prioritized_mood = no
+}

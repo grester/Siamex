@@ -1,0 +1,7 @@
+﻿l_english:
+ #TUTORIAL: Replace the text between the strings (" ") with the journal entry's name\title
+ siamex_empire_entry:0 "Becoming an Empire"
+ #TUTORIAL: Replace the text between the strings (" ") with the journal entry's goal
+ siamex_empire_entry_goal:0 "Become an Empire"
+ #TUTORIAL: Replace the text between the strings (" ") with the journal entry's reason\description
+ siamex_empire_entry_reason:0 "Become Thailand"
