@@ -1,4 +1,37 @@
-﻿siamex_rename_decision = {
+﻿siamex_annex_decision = {
+	
+	is_shown = {
+		this = c:SIA		
+		#TUTORIAL: Here we need to check whether this decision has been taken or not yet
+		NOT = { has_variable = siamex_annex_decision_taken }
+	}
+
+	possible = {
+		this = c:SIA	
+		custom_tooltip = {
+			text = siamex_annex_chiang_t
+			has_variable = siamex_chiang_complete
+		}
+	}
+	
+	when_taken = {
+		c:SIA{
+			set_variable = {
+				name = siamex_annex_decision_taken
+				value = yes
+			}
+		}
+		
+		c:CMI{
+			every_state = { 
+				set_state_owner = c:SIA
+			}			
+		}
+		
+	}
+}
+
+siamex_rename_decision = {
 	
 	is_shown = {
 		this = c:SIA		
@@ -33,43 +66,5 @@
 		}					
 		
 	}
-	
-	ai_chance = {
-		base = 5
-	}
-}
 
-siamex_annex_decision = {
-	
-	is_shown = {
-		this = c:SIA		
-		#TUTORIAL: Here we need to check whether this decision has been taken or not yet
-		NOT = { has_variable = siamex_annex_decision_taken }
-	}
-
-	possible = {		
-		c:SIA = {
-			
-		}
-	}
-	
-	when_taken = {
-		c:SIA{
-			set_variable = {
-				name = siamex_annex_decision_taken
-				value = yes
-			}
-		}
-		
-		c:CIM{
-			every_state = { 
-				set_state_owner = c:SIA
-			}			
-		}
-		
-	}
-	
-	ai_chance = {
-		base = 5
-	}
 }

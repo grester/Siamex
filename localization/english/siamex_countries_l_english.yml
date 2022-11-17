@@ -3,4 +3,5 @@
  dyn_c_thailand_adj:0 "Thai"
  siamex_rename_decision_t: "$siamex_rename_decision$"
  siamex_borneo_mines_t: "[SCOPE.sCountry('siam_country').GetNameNoFlag] has #bold 2 $building_sulfur_mine$#! in [SCOPE.sState('north_borneo_state').GetName]."
+ siamex_annex_chiang_t: "$SIA$ has friendly relations with $CMI$."
  

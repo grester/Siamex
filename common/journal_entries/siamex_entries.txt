@@ -1,4 +1,41 @@
-﻿siamex_empire_entry = {
+﻿siamex_chiang_entry = {
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	complete = {		
+		this = c:SIA
+		c:CMI = {
+				relations:root > relations_threshold:amicable
+			}
+	}
+	
+
+	on_complete = {
+		set_variable = {
+			name = siamex_chiang_complete
+			value = yes
+		}
+	}
+	
+	invalid = {
+		c:SIA={	
+			owns_entire_state_region = STATE_CHIANG_MAI								
+		}
+	}
+	
+
+	#TUTORIAL: The weight of this entry in the journal entries list, the higher the value, the higher will the journal entry be in the list
+	weight = 100
+	
+	#TUTORIAL: We should keep this as yes if we want the journal entry to complete due a timer
+	progressbar = no
+
+	#TUTORIAL: You can choose (yes\no), this pins the journal entry to the top-right hand side of the screen
+	should_be_pinned_by_default = yes
+	
+}
+
+siamex_empire_entry = {
 
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	
@@ -22,10 +59,8 @@
 							level >= 2					
 						}
 					}
-				}
-				
-			}
-									
+				}				
+			}								
 		}
 	}
 	
@@ -49,38 +84,5 @@
 
 	#TUTORIAL: You can choose (yes\no), this pins the journal entry to the top-right hand side of the screen
 	should_be_pinned_by_default = yes
-	
-}
-
-siamex_chiang_entry = {
-
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	complete = {		
-		c:SIA={	
-			owns_entire_state_region = STATE_CHIANG_MAI								
-		}
-	}
-	
-
-	on_complete = {
-		
-	}
-	
-	invalid = {
-		c:SIA={	
-			owns_entire_state_region = STATE_CHIANG_MAI								
-		}
-	}
-	
-
-	#TUTORIAL: The weight of this entry in the journal entries list, the higher the value, the higher will the journal entry be in the list
-	weight = 100
-	
-	#TUTORIAL: We should keep this as yes if we want the journal entry to complete due a timer
-	progressbar = yes
-
-	#TUTORIAL: You can choose (yes\no), this pins the journal entry to the top-right hand side of the screen
-	should_be_pinned_by_default = no
 	
 }

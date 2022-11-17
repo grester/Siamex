@@ -6,5 +6,9 @@
 			limit = { state_region = s:STATE_NORTH_BORNEO }
 			save_scope_as = north_borneo_state
 		}
+		random_scope_country ={
+			limit = { country = c:CMI }
+			save_scope_as = chiang_country
+		}
 	}
 }

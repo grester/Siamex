@@ -5,3 +5,7 @@
  siamex_empire_entry_goal:0 "Become an Empire"
  #TUTORIAL: Replace the text between the strings (" ") with the journal entry's reason\description
  siamex_empire_entry_reason:0 "Become Thailand"
+ 
+ siamex_chiang_entry:0 "Negotiated anexation of Chiang Mai"
+ siamex_chiang_entry_goal:0 "Establish friendly relations with $CMI$."
+ siamex_chiang_entry_reason:0 "$CMI$ has $tai$ culture. They are our brothers. And our brothers are under threat from european invaders. We if unite ourselves we will be stronger."

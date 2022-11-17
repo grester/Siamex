@@ -7,7 +7,8 @@ SIA = {
 		priority = 0
 		
 		trigger = {
-			c:SIA{
+			exists = scope:actor
+			scope:actor{
 				has_variable = siamex_rename_decision_taken
 			}			
 		}
