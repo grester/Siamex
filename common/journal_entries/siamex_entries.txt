@@ -5,7 +5,7 @@
 	complete = {		
 		this = c:SIA
 		c:CMI = {
-				relations:root > relations_threshold:amicable
+				relations:root >= relations_threshold:amicable
 			}
 	}
 	
